@@ -5,15 +5,12 @@
 
 mixin intro(imagen, titulo, contenido)
 	.introMapa  
-		.intro__imagen: img(src="images/thailandia/"+imagen)
-		.intro__contenido 
+		.introMapa__imagen: img(src="../images/thailandia/"+imagen)
+		.introMapa__contenido 
 			h3=titulo 
 			p=contenido 
 
-mixin caja(titulo, contenido, imagen)
-	.caja 
-		.caja__contenido 
-			h3=titulo 
-			p=contenido 
-		.caja__imagen: img(src="images/thailandia/"+imagen)
-			
+mixin caja(titulo, contenido)
+	.caja__contenido 
+		h3=titulo 
+		p=contenido 

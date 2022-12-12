@@ -1,49 +1,43 @@
-// $Fuente1: "Kaushan Script", "cursive";
-// $Fuente2: "Open Sans", "sans-serif";
-// $color-primario: #6f6f6f;
-// $color-secundario: #8841DA;
-// $color-claro: #FFFFFF;
-// $color-oscuro: #444444;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@300;500;700&display=swap');
 
-//HEADER
-//  h1
-// Font-family: "Kaushan Script", "cursive";
-// Size: 28px;
-// Weight: 700;
-// color: #ffffff;
+$Fuente1: "Kaushan Script", "cursive";
+$Fuente2: "Quicksand", "sans-serif";
+$color-primary: #6f6f6f;
+$color-secondary: #444444;
+$color-white: #FFFFFF;
+$color-alternative:#ACD9B2;
+$size-sm: 14px;
+$size-nl: 16px;
+$size-md: 21px;
+$size-lg: 28px;
+$size-hg: 40px;
 
-//  p
-// Font-family: "Open Sans", "sans-serif";
-// Size: 16px;
-// Weight: 400;
-// color: #ffffff;
+* {
+	box-sizing: border-box;
+}
 
+body {
+	margin: 0;
+	padding: 0;
+}
 
-//BODY
-//  h2
-// Font-family: "Kaushan Script", "cursive";
-// Size: 48px;
-// Weight: 700;
-// color: #444444;
+h2, h3 {
+	font-family: $Fuente1;
+	color: $color-secondary;
+	font-weight: 700;
+}
 
-//  h3
-// Font-family: "Kaushan Script", "cursive";
-// Size: 21px;
-// Weight: 700;
-// color: #6f6f6f;
+p {
+	font-family: $Fuente2;
+	color: $color-primary;
+}
 
-//  p
-// Font-family: "Open Sans", "sans-serif";
-// Size: 14px;
-// Weight: 400;
-// color: #6f6f6f;
-
-// * {
-// 	box-sizing: border-box;
-// }
-
-// body {
-// 	margin: 0;
-// 	padding: 0;
-// 	font-family: "Kaushan Script", "cursive";
-// }
+@mixin caja {
+    display: grid;
+	justify-content: space-around;
+	align-content: center;
+	margin: 80px auto;
+	width: 80vw;
+	box-shadow:0 2px 8px rgb(0 0 0 / 7%), 0 0 2px rgb(0 0 0 / 10%);
+	border-radius: 5px;
+}

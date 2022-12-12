@@ -1,0 +1,4 @@
+.caja__contenido {
+	grid-template-rows: 1fr 1fr;
+	@include caja;
+}

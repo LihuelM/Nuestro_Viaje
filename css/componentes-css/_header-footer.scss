@@ -1,0 +1,60 @@
+header {
+	min-height: 80vh;
+	background-image: url(../images/thailandia/phiphi.jpeg);
+	background-position: 50% calc(50% + 0px);
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	will-change: background-position;
+	position: relative;
+	z-index: 1;
+	h1 {
+		font-family: $Fuente1;
+		font-weight: 700;
+		font-size: $size-hg;
+		margin: 2rem 0 1.68rem 0;
+	}
+	ul {
+		margin: 2rem 0 1.68rem 0;
+	}
+}
+footer {
+	background-color: #8898C0; //provisorio
+	height: 60px;
+}
+header, footer {
+	width: 100%;
+	display: flex !important;
+	justify-content: space-between;
+	padding: 0 24px;
+	color: $color-white;
+	ul {
+		margin-left: auto;
+		display: flex;
+		align-content: center;
+		padding-inline-start: 0;
+		height: 40px;
+		li {
+			
+			list-style: none;
+			font-family: $Fuente2;
+			padding: 8px;
+			margin: 0 10px;
+			border-radius: 8px;
+			font-size: $size-nl;
+			a {
+				text-decoration: none;
+				color: $color-white;
+			}
+			a:hover{
+				color: $color-white;
+			}
+		}
+		li:hover {
+			border: 2px solid $color-white;;
+			color: $color-white;
+			cursor: pointer;
+		}
+	}
+}

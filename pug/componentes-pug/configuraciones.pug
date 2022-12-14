@@ -14,3 +14,19 @@ mixin caja(titulo, contenido)
 	.caja__contenido 
 		h3=titulo 
 		p=contenido 
+
+mixin carousel(imagen1, imagen2, imagen3, imagen4, imagen5)
+	.container 
+		.row 
+			.col.s12 
+				.carousel.center-aling
+					.carousel-item
+						img(src="../images/"+imagen1)
+					.carousel-item
+						img(src="../images/"+imagen2)
+					.carousel-item
+						img(src="../images/"+imagen3)
+					.carousel-item
+						img(src="../images/"+imagen4)
+					.carousel-item
+						img(src="../images/"+imagen5)

@@ -12,6 +12,11 @@ header {
 	h1 {
 		font-family: $Fuente1;
 		font-weight: 700;
+		font-size: $size-hg;
+		margin: 2rem 0 1.68rem 0;
+	}
+	ul {
+		margin: 2rem 0 1.68rem 0;
 	}
 }
 footer {
@@ -20,15 +25,14 @@ footer {
 }
 header, footer {
 	width: 100%;
-	display: flex;
+	display: flex !important;
 	justify-content: space-between;
 	padding: 0 24px;
 	color: $color-white;
 	ul {
-		justify-content: space-between;
 		margin-left: auto;
 		display: flex;
-		align-content: flex-end;
+		align-content: center;
 		padding-inline-start: 0;
 		height: 40px;
 		li {
@@ -36,8 +40,9 @@ header, footer {
 			list-style: none;
 			font-family: $Fuente2;
 			padding: 8px;
+			margin: 0 10px;
 			border-radius: 8px;
-			$size-nl: 16px;
+			font-size: $size-nl;
 			a {
 				text-decoration: none;
 				color: $color-white;

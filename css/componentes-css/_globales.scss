@@ -32,6 +32,7 @@ p {
 	color: $color-primary;
 }
 
+// Mixins
 @mixin caja {
     display: grid;
 	justify-content: space-around;
@@ -44,4 +45,20 @@ p {
 	h3 {
 		text-align: center;
 	}
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;
+}
+
+// Funciones
+@function get-opacity($color, $amount) {
+	@return rgba($color, $amount);
+}
+
+@function calculateRem($size) {
+	$remSize: calc($size / 16px);
+	@return $remSize * 1rem;
 }
